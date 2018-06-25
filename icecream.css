@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 
-.iceCreamSunday {
+/* ice cream div container*/
+.iceCreamSundae {
     border: 2px solid darkblue;
     background: #a1ceee;
     height: 500px;
@@ -16,6 +17,8 @@
     -moz-border-radius: 20px;
     border-radius: 20px;
 }
+
+/*ice cream div scoops*/
 .iceCreamScoops {
     -webkit-border-radius: 50px 50px 45px 45px;
     -moz-border-radius: 50px 50px 45px 45px;
@@ -26,6 +29,135 @@
     bottom: -40px;
 }
 
+
+/* glass div container border */
+.glassContainer {
+    /*border: 2px solid black;*/
+    height: 60%;
+    width: 200px;
+    margin: 0 auto;
+    background: black;
+    -webkit-clip-path: polygon(0 0, 100% 0, 80% 100%, 20% 100%);
+    -moz-clip-path: polygon(0 0, 100% 0, 80% 100%, 20% 100%);
+    clip-path: polygon(0 0, 100% 0, 80% 100%, 20% 100%);
+}
+/* glass container */
+.glass {
+    /*border: 1px solid black;*/
+    height: 100%;
+    /*width: 200px;*/
+    margin: 0 auto;
+    padding: 0 50px;
+    background: #a1ceee;
+    -webkit-clip-path: polygon(0 0, 100% 0, 80% 100%, 20% 100%);
+    -moz-clip-path: polygon(0 0, 100% 0, 80% 100%, 20% 100%);
+    clip-path: polygon(0 0, 100% 0, 80% 100%, 20% 100%);
+}
+.glass .iceCreamScoops {
+    height: 33.3%;
+    position: relative;
+}
+
+.iceCreamSundae > .iceCreamScoops {
+    width: 100px;
+    height: 100px;
+    /*z-index: 10;*/
+}
+
+/*last scoop div*/
+#last {
+    bottom: 20px;
+    border: 2px solid purple;
+    background-color: hotpink;
+    z-index: -1;
+}
+#last > div {
+    border-bottom: 2px solid purple;
+    background-color: hotpink;
+}
+#last div:first-of-type {
+    border-left: 2px solid purple;
+}
+#last div:last-of-type {
+    border-right: 2px solid purple;
+}
+
+/*fourth scoop div*/
+#fourth {
+    /*margin-bottom: -30px;*/
+    bottom: 0;
+    border: 2px solid orange;
+    background-color: yellow;
+}
+#fourth > div {
+    border-bottom: 2px solid orange;
+    background-color: yellow;
+}
+#fourth div:first-of-type {
+    border-left: 2px solid orange;
+}
+#fourth div:last-of-type {
+    border-right: 2px solid orange;
+}
+
+/*third scoop div*/
+#third {
+    /*margin-bottom: -30px;*/
+    bottom: -20px;
+    border: 2px solid green;
+    background-color: lightgreen;
+    z-index: 1;
+}
+#third > div {
+    border-bottom: 2px solid green;
+    background-color: lightgreen;
+}
+#third div:first-of-type {
+    border-left: 2px solid green;
+}
+#third div:last-of-type {
+    border-right: 2px solid green;
+}
+
+
+/*second scoop div*/
+#second {
+    /*margin-bottom: -30px;*/
+    border: 2px solid darkred;
+    background-color: indianred;
+}
+#second > div {
+    border-bottom: 2px solid darkred;
+    background-color: indianred;
+}
+#second div:first-of-type {
+    border-left: 2px solid darkred;
+}
+#second div:last-of-type {
+    border-right: 2px solid darkred;
+}
+
+/*first scoop div*/
+#first {
+    margin-bottom: -30px;
+    border: 2px solid blue;
+    background-color: blueviolet;
+    /*z-index: 11;*/
+}
+#first > div {
+    border-bottom: 2px solid blue;
+    background-color: blueviolet;
+}
+#first div:first-of-type {
+    border-left: 2px solid blue;
+}
+#first div:last-of-type {
+    border-right: 2px solid blue;
+}
+
+
+
+/* ice cream drops */
 .bla1, .bla2, .bla3, .bla4 {
     width: 20px;
     border-radius: 50px 50px 50px 50px;
@@ -52,127 +184,15 @@
     bottom: -8px;
 }
 
-.iceCreamSunday > .iceCreamScoops {
-    width: 100px;
-    height: 100px;
-    z-index: 10;
-}
-.glassContainer {
-    /*border: 2px solid black;*/
-    height: 60%;
-    width: 200px;
-    margin: 0 auto;
-    background: black;
-    -webkit-clip-path: polygon(0 0, 100% 0, 80% 100%, 20% 100%);
-    -moz-clip-path: polygon(0 0, 100% 0, 80% 100%, 20% 100%);
-    clip-path: polygon(0 0, 100% 0, 80% 100%, 20% 100%);
-}
 
-.glass {
-     /*border: 1px solid black;*/
-     height: 100%;
-     /*width: 200px;*/
-     margin: 0 auto;
-     padding: 0 50px;
-     background: #a1ceee;
-     -webkit-clip-path: polygon(0 0, 100% 0, 80% 100%, 20% 100%);
-     -moz-clip-path: polygon(0 0, 100% 0, 80% 100%, 20% 100%);
-     clip-path: polygon(0 0, 100% 0, 80% 100%, 20% 100%);
- }
-.glass > .iceCreamScoops {
-    height: 33.3%;
-    position: relative;
-}
-#first {
-    margin-bottom: -30px;
-    border: 2px solid blue;
-    background-color: blueviolet;
-    z-index: 11;
-}
-#first > div {
-    border-bottom: 2px solid blue;
-    background-color: blueviolet;
-}
-#first div:first-of-type {
-    border-left: 2px solid blue;
-}
-#first div:last-of-type {
-    border-right: 2px solid blue;
-}
 
-#second {
-    /*margin-bottom: -30px;*/
-    border: 2px solid darkred;
-    background-color: indianred;
-}
-#second > div {
-    border-bottom: 2px solid darkred;
-    background-color: indianred;
-}
-#second div:first-of-type {
-    border-left: 2px solid darkred;
-}
-#second div:last-of-type {
-    border-right: 2px solid darkred;
-}
 
-#third {
-    /*margin-bottom: -30px;*/
-    bottom: -20px;
-    border: 2px solid green;
-    background-color: lightgreen;
-    z-index: 12;
-}
-#third > div {
-    border-bottom: 2px solid green;
-    background-color: lightgreen;
-}
-#third div:first-of-type {
-    border-left: 2px solid green;
-}
-#third div:last-of-type {
-    border-right: 2px solid green;
-}
-
-#fourth {
-    /*margin-bottom: -30px;*/
-    bottom: 0;
-    border: 2px solid orange;
-    background-color: yellow;
-}
-#fourth > div {
-    border-bottom: 2px solid orange;
-    background-color: yellow;
-}
-#fourth div:first-of-type {
-    border-left: 2px solid orange;
-}
-#fourth div:last-of-type {
-    border-right: 2px solid orange;
-}
-
-#last {
-    bottom: 20px;
-    border: 2px solid purple;
-    background-color: hotpink;
-    z-index: -1;
-}
-#last > div {
-    border-bottom: 2px solid purple;
-    background-color: hotpink;
-}
-#last div:first-of-type {
-    border-left: 2px solid purple;
-}
-#last div:last-of-type {
-    border-right: 2px solid purple;
-}
 
 
 .whippedCream {
     position: absolute;
     left: 90px;
-    z-index: 13;
+    /*z-index: 13;*/
 }
 .layer {
     /*border: 2px solid whitesmoke;*/
@@ -220,19 +240,19 @@
 .cherryBox1 {
     position: absolute;
     right: 43%;
-    z-index: 14
+    /*z-index: 14*/
 }
 .cherryBox2 {
     position: absolute;
     left: 34%;
     top: 8%;
-    z-index: 15;
+    /*z-index: 15;*/
 }
 .cherryBox3 {
     position: absolute;
     right: 34%;
     top: 10%;
-    z-index: 16;
+    /*z-index: 16;*/
 }
 .cherry {
     width: 20px;
@@ -270,7 +290,7 @@
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
     border-radius: 100%;
-    z-index: 17;
+    /*z-index: 17;*/
 }
 .cherryBox2 > .cherry {
     transform: rotate(-50deg);
