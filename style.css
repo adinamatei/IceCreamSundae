@@ -4,12 +4,18 @@
     box-sizing: border-box;
 }
 
+body {
+    margin: 0 auto;
+    max-height: 1000px;
+    max-width: 1000px;
+}
+
 /*the big container*/
 .container {
     border: 2px solid #093d8b;
     background: #a1ceee;
-    width: 700px;
-    height: 600px;
+    width: 70%;
+    height: 60%;
     margin: 50px auto;
     padding-top: 50px;
     -webkit-border-radius: 20px;
@@ -28,8 +34,6 @@
 
 /*the ice cream scoop of iceCreamSundae*/
 .iceCreamSundae > .iceCreamScoops {
-    height: 100px;
-    width: 100px;
     margin: 0 auto;
 }
 
@@ -118,6 +122,8 @@ border-right: 2px solid purple;
     border-right: 2px solid orange;
 }
 
+
+
 /*third scoop div*/
 #third {
     height: 33.3%;
@@ -142,7 +148,9 @@ border-right: 2px solid purple;
 
 /*second scoop div*/
 #second {
-    top: 40px;
+    height: 16%;
+    width: 14%;
+    top: 50px;
     border: 2px solid darkred;
     background-color: indianred;
     z-index: 1;
@@ -161,7 +169,9 @@ border-right: 2px solid darkred;
 
 /*first scoop div*/
 #first {
-    top: 60px;
+    height: 18%;
+    width: 15%;
+    top: 65px;
     border: 2px solid blue;
     background-color: blueviolet;
     z-index: 2;
@@ -187,17 +197,17 @@ border-right: 2px solid blue;
 }
 .bla1 {
     left: 0;
-    bottom: -5px;
+    bottom: -5%;
 }
 .bla2 {
-    left: 23px;
-    bottom: -15px;
+    left: 26%;
+    bottom: -14%;
 }
 .bla3 {
-    left: 50px;
-    bottom: -15px;
+    left: 53%;
+    bottom: -14%;
 }
 .bla4 {
     right: 0;
-    bottom: -5px;
+    bottom: -5%;
 }
